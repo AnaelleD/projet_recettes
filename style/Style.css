@@ -37,6 +37,9 @@ body {
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+  .list-group { 
+      color: #555555;
+  }
 
  /* Bootstrap */ 
 /* cyrillic-ext */

@@ -13,7 +13,7 @@
 		<!-- Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites -->
 	</head>
 	
-	<body>
+	<body onload="importCsv()">
 
 		<!-- Navbar -->
 		<nav class="navbar navbar-default">
@@ -41,6 +41,9 @@
 		<div class="container-fluid bg-1 text-center">
 			<img src="images/entrees.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="entrees" width="250" height="250">			
 			<h3 class="margin">Ingrédients</h3>
+			<ul id="divIngredient" class="list-group" >
+				<!-- ajout dans le script importCsv -->			
+			</ul>
 		</div>
 
 		<!-- Second Container -->

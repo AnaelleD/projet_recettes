@@ -18,8 +18,10 @@ function importCsv(laRecette){
                 cuisson.push(d.detail);
             }
         })
-		console.log(ingredients);
-		console.log(preparation);
-		console.log(cuisson);
-		})
+		
+		/*Ajout liste des ingredients*/
+		for(var i = 0; i < ingredients.length; i++) {
+			document.getElementById('divIngredient').innerHTML += '<li class="list-group-item">'+ingredients[i]+'</li>';
+		}
+	})
 }
