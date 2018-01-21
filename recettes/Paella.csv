@@ -1,3 +1,22 @@
-Ingredients,1 Poivron rouge,1 Oignon,De l’ail,Calamar,Crevettes,Chorizo,Pilon de poulet,Moules,Riz d’or,Safran,Sel,Poivre
-Preparatio,"Emincer le poivron, l’oignon et l’ail.",Les faire revenir dans l’huile d’olive avec les calamars.,"Dans de l’eau, faire cuire les moules jusqu’à ouverture.",Rajouter le poulet au mélange avec le poivron et le faire revenir.,Y ajouter l’eau des moules.,Saler et poivrer.,Ajouter le riz et laisser cuire 30 min le tout.,"5 minutes avant la fin de la suisson, ajouter les moules, crevettes, chorizo puis le safran.",,,,
-Cuisson,1 heure,,,,,,,,,,,
+type,detail
+Ingredients,1 Poivron rouge
+Ingredients,1 Oignon
+Ingredients,De l’ail
+Ingredients,Calamar
+Ingredients,Crevettes
+Ingredients,Chorizo
+Ingredients,Pilon de poulet
+Ingredients,Moules
+Ingredients,Riz d’or
+Ingredients,Safran
+Ingredients,Sel
+Ingredients,Poivre
+Preparation,"Emincer le poivron, l’oignon et l’ail."
+Preparation,Les faire revenir dans l’huile d’olive avec les calamars.
+Preparation,"Dans de l’eau, faire cuire les moules jusqu’à ouverture."
+Preparation,Rajouter le poulet au mélange avec le poivron et le faire revenir.
+Preparation,Y ajouter l’eau des moules.
+Preparation,Saler et poivrer.
+Preparation,Ajouter le riz et laisser cuire 30 min le tout.
+Preparation,"5 minutes avant la fin de la suisson, ajouter les moules, crevettes, chorizo puis le safran."
+Cuisson,1 heure
