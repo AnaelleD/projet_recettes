@@ -3,19 +3,23 @@ body {
       line-height: 1.8;
       color: #f5f6f7;
   }
+  
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
+      /*background-color: #1abc9c; /* Green */
+      /*color: #ffffff;*/
+      background-image:url(../images/);
   }
   .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
+      /*background-color: #474e5d; /* Dark Blue */
+      /*color: #ffffff;*/
+      background-image:url(../images/arriere_plan.jpeg);
   }
   .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
+      /*background-color: #ffffff; /* White */
+     /* color: #555555;*/
+     background-image:url(../images/);
   }
   .bg-4 { 
       background-color: #2f2f2f; /* Black Gray */

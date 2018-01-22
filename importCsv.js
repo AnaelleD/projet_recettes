@@ -1,7 +1,9 @@
 function importCsv(laRecette){
 	/*window.location.replace("recette.html");*/
 	
+	
     d3.csv("recettes/Paella.csv", function(error, data){
+	
 		
         var ingredients = [];
         var preparation = [];
