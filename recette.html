@@ -2,13 +2,13 @@
 <html lang="fr">
 	<head>
 		<title>Recettes</title>
-		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style/bootstrap.min.css"	type="text/css">
+		<link rel="stylesheet" href="style/bootstrap.css"	type="text/css">
 		<link rel="stylesheet" href="style/Style.css"	type="text/css">
 		<script src="visuel/jquery.js"></script>
 		<script src="visuel/bootstrap.js"></script>
-		<script type="text/javascript" src="importCsv.js"></script>
+		<script type="text/javascript" src="functions.js"></script>
 		<script type="text/javascript" src="visuel/d3.v4.js"></script>
 		<!-- Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites -->
 	</head>
@@ -29,16 +29,20 @@
 				
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="">Entrées</a></li>
-						<li><a href="#">WHAT</a></li>
-						<li><a href="#">WHERE</a></li>
+						<li><a href="#ingred">Ingrédients</a></li>
+						<li><a href="#prep">Préparation</a></li>
+						<li><a href="#cuisson">Cuisson</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
+		<div class="container-fluid text-center">
+			<h2>Mettre titre de la recette </h2>
+		</div>
+		
 		<!-- First Container -->
-		<div class="container-fluid bg-1 text-center">
+		<div class="container-fluid bg-1 text-center" id="ingred">
 			<img src="images/entrees.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="entrees" width="250" height="250">			
 			<h3 class="margin">Ingrédients</h3>
 			<ul id="divIngredient" class="list-group" >
@@ -47,18 +51,19 @@
 		</div>
 
 		<!-- Second Container -->
-		<div class="container-fluid bg-2 text-center">
+		<div class="container-fluid bg-2 text-center" id="prep">
 			<h3 class="margin">Préparation</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-			<a href="#" class="btn btn-default btn-lg">
-				<span class="glyphicon glyphicon-search"></span> Search
-			</a>
+			<ul id="divPreparation" class="list-group" >
+				<!-- ajout dans le script importCsv -->			
+			</ul>
 		</div>
 
 		<!-- Third Container (Grid) -->
-		<div class="container-fluid bg-3 text-center">    
+		<div class="container-fluid bg-3 text-center" id="cuisson">    
 			<h3 class="margin">Cuisson</h3><br>
-			<div class="row">
+			<ul id="divCuisson" class="list-group" >
+				<!-- ajout dans le script importCsv -->			
+			</ul>
 		  </div>
 		</div>
 

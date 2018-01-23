@@ -2,13 +2,13 @@
 <html lang="fr">
 	<head>
 		<title>Recettes</title>
-		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style/bootstrap.min.css"	type="text/css">
+		<link rel="stylesheet" href="style/bootstrap.css"	type="text/css">
 		<link rel="stylesheet" href="style/Style.css"	type="text/css">
 		<script src="visuel/jquery.js"></script>
 		<script src="visuel/bootstrap.js"></script>
-		<script type="text/javascript" src="importCsv.js"></script>
+		<script type="text/javascript" src="functions.js"></script>
 		<script type="text/javascript" src="visuel/d3.v4.js"></script>
 		<!-- Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites -->
 	</head>
@@ -24,61 +24,61 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>                        
 					</button>
-					<a class="navbar-brand" href="#">Accueil</a>
+					<a class="navbar-brand" href="index.html"> Accueil</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Entrées</a></li>
-						<li><a href="#">Plats</a></li>
-						<li><a href="#">Desserts</a></li>
+						<li><a href="#entree">Entrées</a></li>
+						<li><a href="#plat">Plats</a></li>
+						<li><a href="#dessert">Desserts</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
 		<!-- First Container -->
-		<div class="container-fluid bg-1 text-center">
+		<div class="container-fluid bg-1 text-center" id="entree">
 			<h3 class="margin" style="color:black">Entrées</h3>
 			<img src="images/entrees.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="entrees" width="250" height="250">
 			<div class="form-group">
 				<label for="sel1" style="color:black">Sélectionner une entrée</label>
 				<select class="form-control" id="sel1" style="width:300px; margin:auto;" >
-					<option>Samoussas</option>
-					<option>Bonbons piments</option>
-					<option>Coquilles Saint Jacques</option>
+					<option value="Samoussas">Samoussas</option>
+					<option value="Bonbon_piment">Bonbons piments</option>
+					<option value="Coquilles_saint_jacques">Coquilles Saint Jacques</option>
 				</select>
 				<br/>
-				<button type="button" class="btn btn-warning" onclick="location.href='recette.html';" >Valider</button>
+				<button type="button" class="btn btn-warning" onclick="getRecipe();location.href='recette.html'" >Valider</button>
 			</div> 
 		</div>
 
 		<!-- Second Container -->
-		<div class="container-fluid bg-2 text-center">
+		<div class="container-fluid bg-2 text-center" id="plat">
 			<h3 class="margin" style="color:black">Plats</h3>
 			<img src="images/plats.jpg" class="img-responsive img-circle margin" style="display:inline" alt="plat" width="250" height="450">
 			<div class="form-group">
 				<label for="sel1" style="color:black">Sélectionner un plat</label>
 				<select class="form-control" id="sel1" style="width:300px; margin:auto;" >
-					<option>Paëlla</option>
-					<option>Poulet Massale</option>
-					<option>Maffe</option>
+					<option value="Paella">Paëlla</option>
+					<option value="Poulet_massale">Poulet Massalé</option>
+					<option value="Maffe">Maffé</option>
 				</select>
 				<br/>
-				<button type="button" class="btn btn-warning" onclick="saveCurve()">Valider</button>
+				<button type="button" class="btn btn-warning" onclick="getRecipe();location.href='recette.html'">Valider</button>
 			</div> 
 		</div>
 
 		<!-- Third Container (Grid) -->
-		<div class="container-fluid bg-3 text-center">    
+		<div class="container-fluid bg-3 text-center" id="dessert">    
 			<h3 class="margin" style="color:black">Desserts</h3>
 			<img src="images/desserts.jpg" class="img-responsive img-circle margin" style="display:inline" alt="dessert" width="250" height="350">
 			<div class="form-group">
 				<label for="sel1" style="color:black">Sélectionner un dessert</label>
 				<select class="form-control" id="sel1" style="width:300px; margin:auto;" >
-					<option>Cake banane</option>
-					<option>Gateau patate</option>
-					<option>Fondant au chocolat</option>
+					<option value="Cake_banane">Cake banane</option>
+					<option value="Gateau_patate">Gateau patate</option>
+					<option value="Fondant_chocolat">Fondant au chocolat</option>
 				</select>
 				<br/>
 				<button type="button" class="btn btn-warning" onclick="saveCurve()">Valider</button>
@@ -87,7 +87,7 @@
 
 		<!-- Footer -->
 		<footer class="container-fluid bg-4 text-center">
-			<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+			<p>Copyright &copy; 2018. AnD. All Rigths Reserved</p> 
 		</footer>
 
 	</body>
