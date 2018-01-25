@@ -1,21 +1,43 @@
-function getRecipe(){
+function getRecipe1(){
 	var laRecette = document.getElementById("sel1").value;
-	alert(laRecette);
+	var queryString = "?recette=" + laRecette;
+	window.location.href = "recette.html" + queryString;
+}
+function getRecipe2(){
+	var laRecette = document.getElementById("sel2").value;
+	var queryString = "?recette=" + laRecette;
+	window.location.href = "recette.html" + queryString;
+}
+function getRecipe3(){
+	var laRecette = document.getElementById("sel3").value;
+	var queryString = "?recette=" + laRecette;
+	window.location.href = "recette.html" + queryString;
 }
 
-
-function importCsv(laRecette){
-	/*window.location.replace("recette.html");*/
+function getParameterByName(name, url) {
+	if (!url) url = window.location.href;
+	name = name.replace(/[\[\]]/g, "\\$&");
+	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return '';
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 	
+function importCsv(){
+	var laRecette = getParameterByName('recette');
 	
-    d3.csv("recettes/Paella.csv",  function(error, data){
+    d3.csv("recettes/"+laRecette+".csv",  function(error, data){
 	
-		
+		var nom = [];
         var ingredients = [];
         var preparation = [];
 		var cuisson = [];
 		
         data.forEach(function (d){
+            if(d.type == "Nom"){
+                nom.push(d.detail);
+            }			
             if(d.type == "Ingredients"){
                 ingredients.push(d.detail);
             }
@@ -26,7 +48,9 @@ function importCsv(laRecette){
                 cuisson.push(d.detail);
             }
         })
-		
+
+		/*Ajout du nom*/		
+		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
 		/*Ajout liste des ingredients*/
 		for(var i = 0; i < ingredients.length; i++) {
 			document.getElementById('divIngredient').innerHTML += '<li class="list-group-item">'+ingredients[i]+'</li>';
