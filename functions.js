@@ -14,6 +14,7 @@ function getRecipe3(){
 	window.location.href = "recette.html" + queryString;
 }
 
+// Fonction pour récupérer le nom de la recette dans l'url
 function getParameterByName(name, url) {
 	if (!url) url = window.location.href;
 	name = name.replace(/[\[\]]/g, "\\$&");
@@ -53,15 +54,15 @@ function importCsv(){
 		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
 		/*Ajout liste des ingredients*/
 		for(var i = 0; i < ingredients.length; i++) {
-			document.getElementById('divIngredient').innerHTML += '<li class="list-group-item">'+ingredients[i]+'</li>';
+			document.getElementById('divIngredient').innerHTML += '<p>'+ingredients[i]+'</p><br/>';
 		}
 		/*Ajout préparation*/
 		for(var i = 0; i < preparation.length; i++) {
-			document.getElementById('divPreparation').innerHTML += '<li class="list-group-item">'+preparation[i]+'</li>';
+			document.getElementById('divPreparation').innerHTML += '<p>'+preparation[i]+'</p><br/>';
 		}
 		/*Ajout cuisson*/
 		for(var i = 0; i < cuisson.length; i++) {
-			document.getElementById('divCuisson').innerHTML += '<li class="list-group-item">'+cuisson[i]+'</li>';
+			document.getElementById('divCuisson').innerHTML += '<p>'+cuisson[i]+'</p><br/>';
 		}
 	})
 }

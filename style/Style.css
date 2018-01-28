@@ -3,29 +3,40 @@ body {
 	line-height: 1.8;
 	color: #2f2f2f;
 }
-  
-p {font-size: 16px;}
 
 .margin {margin-bottom: 45px;}
-.bg-1 { 
+
+.bg-2 { 
 	/*background-color: #1abc9c; /* Green */
 	background-image:url(../images/entree_ap.jpg);
 }
-.bg-2 { 
+.bg-3 { 
 	/*background-color: #474e5d; /* Dark Blue */
 	background-image:url(../images/plat_ap.jpg);
 }
-.bg-3 { 
+.bg-4 { 
 	/*background-color: #ffffff; /* White */
 	background-image:url(../images/dessert_ap.jpg);
 }
-.bg-4 { 
+.bg-5 { 
+	/*background-color: #ffffff; /* White */
+	background-image:url(../images/ingredients.png);
+}
+.bg-6 { 
+	/*background-color: #ffffff; /* White */
+	background-image:url(../images/preparation.jpg);
+}
+.bg-7 { 
+	/*background-color: #ffffff; /* White */
+	background-image:url(../images/cuisson.jpg);
+}
+.bg-footer { 
 	background-color: #2f2f2f; /* Black Gray */
 	color : #ffffff;
 }
 .container-fluid {
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .navbar {
 	padding-top: 15px;
@@ -39,8 +50,10 @@ p {font-size: 16px;}
 .navbar-nav  li a:hover {
 	color: #FE1B00 !important;
 }
-.list-group { 
+
+.list-group-item { 
 	color: #555555;
+	display: inline-block;
 }
 
  /* Bootstrap */ 
