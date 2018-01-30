@@ -52,10 +52,14 @@ function importCsv(){
 
 		/*Ajout du nom*/		
 		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
+		/*Ajout de la photo*/		
+		document.getElementById('titre').innerHTML += '<img src="images/'+laRecette+'.jpg" class="img-responsive img-circle margin" style="display:inline" alt="plat" width="250" height="250">';
 		/*Ajout liste des ingredients*/
+		var ingredientsOK = '';
 		for(var i = 0; i < ingredients.length; i++) {
-			document.getElementById('divIngredient').innerHTML += '<p>'+ingredients[i]+'</p><br/>';
+			ingredientsOK+=ingredients[i]+' , ';
 		}
+		document.getElementById('divIngredient').innerHTML += '<p>'+ingredientsOK+'</p>';
 		/*Ajout préparation*/
 		for(var i = 0; i < preparation.length; i++) {
 			document.getElementById('divPreparation').innerHTML += '<p>'+preparation[i]+'</p><br/>';

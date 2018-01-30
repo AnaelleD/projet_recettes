@@ -19,16 +19,16 @@ body {
 	background-image:url(../images/dessert_ap.jpg);
 }
 .bg-5 { 
-	/*background-color: #ffffff; /* White */
-	background-image:url(../images/ingredients.png);
+	background-color: #e6e6e6; /* ligthgrey */
+	/*background-image:url(../images/ingredients.png);*/
 }
 .bg-6 { 
-	/*background-color: #ffffff; /* White */
-	background-image:url(../images/preparation.jpg);
+	background-color: #ffffff; /* White */
+	/*background-image:url(../images/preparation.jpg);*/
 }
 .bg-7 { 
-	/*background-color: #ffffff; /* White */
-	background-image:url(../images/cuisson.jpg);
+	background-color: #e6e6e6; /* ligthgrey */
+	/*background-image:url(../images/cuisson.jpg);*/
 }
 .bg-footer { 
 	background-color: #2f2f2f; /* Black Gray */
