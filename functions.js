@@ -52,21 +52,28 @@ function importCsv(){
 
 		/*Ajout du nom*/		
 		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
+		
 		/*Ajout de la photo*/		
 		document.getElementById('titre').innerHTML += '<img src="images/'+laRecette+'.jpg" class="img-responsive img-circle margin" style="display:inline" alt="plat" width="250" height="250">';
+		
 		/*Ajout liste des ingredients*/
 		var ingredientsOK = '';
 		for(var i = 0; i < ingredients.length; i++) {
 			ingredientsOK+=ingredients[i]+' , ';
 		}
+		ingredientsOK = ingredientsOK.slice(0,-2); /*Enlève la dernière virgule*/
 		document.getElementById('divIngredient').innerHTML += '<p>'+ingredientsOK+'</p>';
+		
 		/*Ajout préparation*/
+		var preparationOK = '';
 		for(var i = 0; i < preparation.length; i++) {
-			document.getElementById('divPreparation').innerHTML += '<p>'+preparation[i]+'</p><br/>';
+			preparationOK+=preparation[i]+' <br> ';
 		}
+		document.getElementById('divPreparation').innerHTML += '<p>'+preparationOK+'</p>';
+		
 		/*Ajout cuisson*/
 		for(var i = 0; i < cuisson.length; i++) {
-			document.getElementById('divCuisson').innerHTML += '<p>'+cuisson[i]+'</p><br/>';
+			document.getElementById('divCuisson').innerHTML += '<p>'+cuisson[i]+'</p>';
 		}
 	})
 }
