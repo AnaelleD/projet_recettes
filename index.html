@@ -29,7 +29,7 @@
 				</div>
 				
 				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right" >
 						<li><a href="#entree">Entrées</a></li>
 						<li><a href="#plat">Plats</a></li>
 						<li><a href="#dessert">Desserts</a></li>
@@ -37,18 +37,18 @@
 				</div>
 			</div>
 		</nav>
-		
-		<div class="container sections-wrapper">
-			<!-- First Container -->
-			<div class="container-fluid bg-1" id="entree">
-				<h2 class="margin" style="color:black"> Bonjour ! Bonzour zot tout ! Bom dia !</h3>
-				<p> Bienvenue sur notre site de recettes internationales ! <p/>
-			</div>
+	
+		<!-- First Container -->
+		<div class="jumbotron text-center bg-1">
+		  <h1>Bonjour ! Bonzour zot tout ! Bom dia !</h1> 
+		  <h1>Bienvenue sur notre site de recettes internationales ! </h1> 
+		</div>
 			
+		<div class="container sections-wrapper">
+		
 			<!-- Second Container -->
 			<div class="container-fluid bg-2" id="entree">
 				<h3 class="margin" style="color:black">Entrées</h3>
-				<!--<img src="images/entrees.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="entrees" width="250" height="250">-->
 				<div class="form-group">
 					<label for="sel1" style="color:black">Sélectionner une entrée</label>
 					<select class="form-control" id="sel1" style="width:auto; margin:auto;" >
@@ -57,14 +57,13 @@
 						<option value="Coquilles_saint_jacques">Cassolette de coquilles Saint Jacques</option>
 					</select>
 					<br/>
-					<button type="button" class="btn btn-warning" onclick="getRecipe1()" >Valider</button>
+					<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe1()" >Voir la recette!</button>
 				</div> 
 			</div>
 
 			<!-- Third Container -->
 			<div class="container-fluid bg-3" id="plat">
 				<h3 class="margin" style="color:black">Plats</h3>
-				<!--<img src="images/plats.jpg" class="img-responsive img-circle margin" style="display:inline" alt="plat" width="250" height="450">-->
 				<div class="form-group">
 					<label for="sel2" style="color:black">Sélectionner un plat</label>
 					<select class="form-control" id="sel2" style="width:auto; margin:auto;" >
@@ -80,29 +79,29 @@
 						<option value="TarteTomate">Tarte à la tomate</option>
 					</select>
 					<br/>
-					<button type="button" class="btn btn-warning" onclick="getRecipe2()">Valider</button>
+					<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe2()">Voir la recette!</button>
 				</div> 
 			</div>
 
 			<!-- Fourth Container -->
 			<div class="container-fluid bg-4" id="dessert">    
 				<h3 class="margin" style="color:black">Desserts</h3>
-				<!--<img src="images/desserts.jpg" class="img-responsive img-circle margin" style="display:inline" alt="dessert" width="250" height="350">-->
 				<div class="form-group">
 					<label for="sel3" style="color:black">Sélectionner un dessert</label>
-					<select class="form-control" id="sel3" style="width:auto; margin:auto;" >
+					<select class="form-control" id="sel3" >
 						<option value="Crepes">Crêpes</option>
 						<option value="GateauPain">Gateau de pain</option>
 						<option value="TarteTatin">Tarte tatin</option>
 					</select>
 					<br/>
-					<button type="button" class="btn btn-warning" onclick="getRecipe3()">Valider</button>
+					<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe3()">Voir la recette!</button>
 				</div> 
 			</div>
 		</div>
 		<!-- Footer -->
-		<footer class="container-fluid bg-footer text-center">
-			<p>Copyright &copy; 2018. AnD. All Rigths Reserved</p> 
+		<footer class="container-fluid bg-footer">
+			<p>Designed with &#10084; by Anaëlle &amp; Diane.</p>
+			<p>This site is hosted on <a href="https://github.com/">GitHub.</a></p> 			
 		</footer>
 
 	</body>
