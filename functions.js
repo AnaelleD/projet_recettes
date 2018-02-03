@@ -34,8 +34,9 @@ function importCsv(){
         var ingredients = [];
         var preparation = [];
 		var cuisson = [];
-		
-        data.forEach(function (d){
+
+		for (var i = 0; i < data.length; i++){
+			var d = data[i];
             if(d.type == "Nom"){
                 nom.push(d.detail);
             }			
@@ -48,7 +49,7 @@ function importCsv(){
 			if(d.type == "Cuisson"){
                 cuisson.push(d.detail);
             }
-        })
+        }
 
 		/*Ajout du nom*/		
 		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
