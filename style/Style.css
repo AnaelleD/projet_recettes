@@ -1,11 +1,16 @@
 body {
 	font-family: Garamond, serif;
-	font-size:20px;
+	font-size:25px;
 	line-height: 1.8;
 	color: #2f2f2f;
 	text-align: center;
 }
+h1 { color: #ffffff; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; 
+text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;}
+h2{color:black ; font-weight:bold}
+p{font-size:25px}
 
+/* Navbar */
 .navbar {
 	background-color: #2f2f2f; /* Black Gray */
 	padding-top: 15px;
@@ -14,32 +19,37 @@ body {
 	border-radius: 0;
 	margin-bottom: 0;
 	letter-spacing: 5px;
+	font-size:25px;
 }
 .navbar-brand {	font-size:25px;}
-
 .navbar-nav  li a:hover {
 	color: #ffffff !important;
 }
 
-
-p{font-size:25px}
-
+/* containeur */
 .sections-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.btn{
-	width:auto;
-	margin:auto;
-	font-size:20px}
-	
+.container-fluid {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Form et button */
 .form-control{
 	width:auto;
 	height:auto;
 	margin:auto;
 	font-size:20px
 }
+.btn{
+	width:auto;
+	margin:auto;
+	font-size:20px}
+	
 
+/* bg */
 .bg-1 { 
 	padding-top: 300px;
 	padding-bottom: 300px;
@@ -61,19 +71,9 @@ p{font-size:25px}
 }
 .bg-5 { 
 	background-image:url(../images/fond_cahier.jpg);
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .bg-footer { 
 	background-color: #2f2f2f; /* Black Gray */
 	color : #ffffff;
-}
-.container-fluid {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-
-.list-group-item { 
-	color: #555555;
-	display: inline-block;
 }

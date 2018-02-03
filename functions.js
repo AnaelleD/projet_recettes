@@ -51,10 +51,10 @@ function importCsv(){
         })
 
 		/*Ajout du nom*/		
-		document.getElementById('titre').innerHTML += '<h1>' + nom +'</h1>';
+		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
 		
 		/*Ajout de la photo*/		
-		document.getElementById('titre').innerHTML += '<img src="images/'+laRecette+'.jpg" class="img-responsive img-circle margin" style="display:inline" alt="plat" width="250" height="250">';
+		document.getElementById('titre').innerHTML += '<img src="images/'+laRecette+'.jpg" class="img-responsive img-circle margin" style="display:inline" alt="plat" width="350" height="350">';
 		
 		/*Ajout liste des ingredients*/
 		var ingredientsOK = '';
