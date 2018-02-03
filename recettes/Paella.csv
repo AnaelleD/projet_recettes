@@ -1,4 +1,4 @@
-﻿type,detail
+type,detail
 Nom,Paëlla
 Ingredients,1 Poivron rouge
 Ingredients,1 Oignon
@@ -18,6 +18,6 @@ Preparation,"Dans de l’eau, faire cuire les moules jusqu’à ouverture."
 Preparation,Rajouter le poulet au mélange avec le poivron et le faire revenir.
 Preparation,Y ajouter l’eau des moules.
 Preparation,Saler et poivrer.
-Preparation,Ajouter le riz et laisser cuire 30 min le tout.
-Preparation,"5 minutes avant la fin de la suisson, ajouter les moules, crevettes, chorizo puis le safran."
-Cuisson,1 heure
+Preparation,Ajouter le riz.
+Cuisson,Laisser cuire 1 heure le tout.
+Cuisson,"5 minutes avant la fin de la cuisson, ajouter les moules, crevettes, chorizo puis le safran."

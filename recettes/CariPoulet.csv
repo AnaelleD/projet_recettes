@@ -1,11 +1,13 @@
-﻿type,detail
+type,detail
 Nom,Cari Poulet
 Ingredients,1 poulet
 Ingredients,5 tomates
 Ingredients,5 petites échalottes
 Ingredients,5 gousses d'ail
 Ingredients,Safran
+Ingredients,Huile de tournesol
 Preparation,"Saler, poivrer le poulet."
-Preparation,"Le faire frire environ 10 à 15 minutes dans 2 cuillères à soupe d'huile."
+Preparation,Le faire frire environ 10 à 15 minutes dans 2 cuillères à soupe d'huile.
+Preparation,Emincer les échalottes et l’ail.
 Preparation,"Ajouter les échalottes, l'ail et le safran (1 cuillère à café), puis les tomates."
 Cuisson,40 min à la casserole
