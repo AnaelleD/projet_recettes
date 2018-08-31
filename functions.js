@@ -33,9 +33,10 @@ function importCsv(){
 				var nom = [];
         var ingredients = [];
         var preparation = [];
-				var cuisson = [];
+		var cuisson = [];
 
-        data.forEach(function (d){
+		for (var i = 0; i < data.length; i++){
+			var d = data[i];
             if(d.type == "Nom"){
                 nom.push(d.detail);
             }
@@ -48,21 +49,32 @@ function importCsv(){
 			if(d.type == "Cuisson"){
                 cuisson.push(d.detail);
             }
-        })
-				
+        }
+
 		/*Ajout du nom*/
 		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
+
+		/*Ajout de la photo*/
+		document.getElementById('titre').innerHTML += '<img src="images/'+laRecette+'.jpg" class="img-responsive img-circle margin" style="display:inline" alt="plat" width="350" height="350">';
+
 		/*Ajout liste des ingredients*/
+		var ingredientsOK = '';
 		for(var i = 0; i < ingredients.length; i++) {
-			document.getElementById('divIngredient').innerHTML += '<td>'+ingredients[i]+'</td><br/>';
+			ingredientsOK+=ingredients[i]+' , ';
 		}
+		ingredientsOK = ingredientsOK.slice(0,-2); /*Enlève la dernière virgule*/
+		document.getElementById('divIngredient').innerHTML += '<p>'+ingredientsOK+'</p>';
+
 		/*Ajout préparation*/
+		var preparationOK = '';
 		for(var i = 0; i < preparation.length; i++) {
-			document.getElementById('divPreparation').innerHTML += '<p>'+preparation[i]+'</p><br/>';
+			preparationOK+=preparation[i]+' <br> ';
 		}
+		document.getElementById('divPreparation').innerHTML += '<p>'+preparationOK+'</p>';
+
 		/*Ajout cuisson*/
 		for(var i = 0; i < cuisson.length; i++) {
-			document.getElementById('divCuisson').innerHTML += '<p>'+cuisson[i]+'</p><br/>';
+			document.getElementById('divCuisson').innerHTML += '<p>'+cuisson[i]+'</p>';
 		}
 	})
 }

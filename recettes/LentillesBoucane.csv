@@ -1,4 +1,4 @@
-﻿type,detail
+type,detail
 Nom,Lentilles Boucané
 Ingredients,500 g de lentilles
 Ingredients,750 g de boucané
@@ -7,8 +7,7 @@ Ingredients,6 petits oignons
 Ingredients,1 bout de gingembre
 Ingredients,1 branche de thym
 Ingredients,1 cuillère à café de curcuma
-Ingredients,sel
-Ingredients,poivre
+Ingredients,sel et poivre
 Preparation,Dessaler le boucané et le couper en morceaux dans l'eau bouillante pendant 45 min.
 Preparation,Laver les lentilles.
 Preparation,"Piler l'ail, le sel, le poivre et le gingembre."
@@ -17,5 +16,4 @@ Preparation,Faire revenir le boucané dans 3 cuillères à soupe d'huile pendant
 Preparation,Ajouter les oignons et mélanger.
 Preparation,Ajouter le mélange pilé et mélanger.
 Preparation,"Ajouter le thym, les lentilles, le curcuma et verser de l'eau à 2 fois la hauteur des lentilles."
-Preparation,Mettre à feu moyen dès ébullition.
-Cuisson,20 à 30 min
+Cuisson,Mettre à feu moyen dès ébullition et cuire 20 à 30 min

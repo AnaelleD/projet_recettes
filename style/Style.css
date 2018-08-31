@@ -9,153 +9,81 @@
 }
 
 body {
-	font: 37px Montserrat, sans-serif;
+	font-family: Garamond, serif;
+	font-size:25px;
 	line-height: 1.8;
 	color: #2f2f2f;
+	text-align: center;
 }
+h1 { color: #ffffff; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1;
+text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;}
+h2{color:black ; font-weight:bold}
+p{font-size:25px}
 
-.bg-2 {
-	/*background-color: #1abc9c; /* Green */
-	background-image:url(../images/entree_transparent.jpg);
-	background-size : 100%;
-}
-.bg-3 {
-	/*background-color: #474e5d; /* Dark Blue */
-	background-image:url(../images/plat_transparent.png);
-	background-size : 100%;
-}
-.bg-4 {
-	/*background-color: #ffffff; /* White */
-	background-image:url(../images/dessert_ap2.jpg);
-	background-size : 100%;
-}
-.bg-5 {
-	/*background-color: #ffffff; /* White */
-	background-image:url(../images/ingredients1.png);
-}
-.bg-6 {
-	/*background-color: #ffffff; /* White */
-	background-image:url(../images/preparation.jpg);
-}
-.bg-7 {
-	/*background-color: #ffffff; /* White */h3
-	background-image:url(../images/cuisson.jpg);
-}
-.bg-footer {
-	background-color: #647891; /*#2f2f2f; Black Gray */
-	color : #ffffff;
-	font-size: 20px;
-}
-
-.btn {
-	font-size:20px;
-}
-
-.container-fluid {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-h3 {
-	font-size:30px;
-}
-
-p {
-	font-size: 25px;
-}
-.margin {
-	margin-bottom: 45px;
-}
-
+/* Navbar */
 .navbar {
+	background-color: #2f2f2f; /* Black Gray */
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border: 0;
 	border-radius: 0;
 	margin-bottom: 0;
-	font-size: 20px;
 	letter-spacing: 5px;
-	background-color: #647891;
+	font-size:25px;
 }
-
-.navbar a {
+.navbar-brand {	font-size:25px;}
+.navbar-nav  li a:hover {
 	color: #ffffff !important;
 }
 
-.navbar-brand a:hover {
-	color: black !important;
-	background-color: #fff !important;
+/* containeur */
+.sections-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container-fluid {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-.navbar-nav  li a:hover {
-	color: black !important;
-	background-color: #fff !important;
+/* Form et button */
+.form-control{
+	width:auto;
+	height:auto;
+	margin:auto;
+	font-size:20px
 }
-
-.list-group-item {
-	color: #555555;
-	display: inline-block;
-}
-
-#sel1, #sel2, #sel3 {
+.btn{
 	width:auto;
 	margin:auto;
-	height:auto;
-	text-align:center;
-	font-size: 20px;
+	font-size:20px}
+
+
+/* bg */
+.bg-1 {
+	padding-top: 300px;
+	padding-bottom: 300px;
+	background-image:url(../images/fond.jpg);
+	color: #ffffff;
 }
 
-table {
-	margin-left:auto;
-  margin-right:auto;
-	border:thin solid;
+.bg-2 {
+	background-image:url(../images/entree_ap.jpg);
+	margin-bottom: 30px;
 }
-thead {
-	background-color: #647891;
-	color: white;
+.bg-3 {
+	background-image:url(../images/plat_ap.jpg);
+	margin-bottom: 30px;
 }
-
-td {
-	background-color: transparent;
+.bg-4 {
+	background-image:url(../images/dessert_ap.jpg);
+	margin-bottom: 30px;
 }
- /* Bootstrap */
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/rBHvpRWBkgyW99dXT88n7yEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+.bg-5 {
+	background-image:url(../images/fond_cahier.jpg);
+	margin-bottom: 20px;
 }
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/NX1NravqaXESu9fFv7KuqiEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/SKK6Nusyv8QPNMtI4j9J2yEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/gFXtEMCp1m_YzxsBpKl68iEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+.bg-footer {
+	background-color: #2f2f2f; /* Black Gray */
+	color : #ffffff;
 }
