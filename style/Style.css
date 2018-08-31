@@ -1,4 +1,4 @@
-/* pour visualisation des boîtes bootstrap*/
+/* pour visualisation des boîtes Bootstrap
 .row [class^="col-"] {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -6,8 +6,41 @@
     border: 1px solid #ddd;
     background-color: rgba(86,61,124,.15);
     border: 1px solid rgba(86,61,124,.2);
+}*/
+
+/* bg */
+.bg-1 {
+	padding-top: 300px;
+	padding-bottom: 300px;
+	background-image:url(../images/fond.jpg);
+	color: #ffffff;
+  background-size : 100%;
 }
 
+.bg-2 {
+	background-image:url(../images/entree_transparent.jpg);
+  background-size : 100%;
+}
+.bg-3 {
+	background-image:url(../images/plat_transparent.png);
+  background-size : 100%;
+}
+.bg-4 {
+	background-image:url(../images/dessert_ap2.jpg);
+	margin-bottom: 30px;
+	background-size : 100%;
+}
+.bg-5 {
+	background-image:url(../images/fond_cahier.jpg);
+	margin-bottom: 20px;
+}
+.bg-footer {
+	background-color: #647891;
+	color : #ffffff;
+	font-size: 20px;
+}
+
+/* Text */
 body {
 	font-family: Garamond, serif;
 	font-size:25px;
@@ -15,35 +48,23 @@ body {
 	color: #2f2f2f;
 	text-align: center;
 }
-h1 { color: #ffffff; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1;
-text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;}
-h2{color:black ; font-weight:bold}
-p{font-size:25px}
 
-/* Navbar */
-.navbar {
-	background-color: #2f2f2f; /* Black Gray */
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border: 0;
-	border-radius: 0;
-	margin-bottom: 0;
-	letter-spacing: 5px;
-	font-size:25px;
-}
-.navbar-brand {	font-size:25px;}
-.navbar-nav  li a:hover {
-	color: #ffffff !important;
+h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
-/* containeur */
-.sections-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+h2 {
+  color:black ;
+  font-weight:bold
 }
-.container-fluid {
-	padding-top: 20px;
-	padding-bottom: 20px;
+
+p {
+  font-size:25px
 }
 
 /* Form et button */
@@ -53,37 +74,60 @@ p{font-size:25px}
 	margin:auto;
 	font-size:20px
 }
+
 .btn{
 	width:auto;
 	margin:auto;
-	font-size:20px}
-
-
-/* bg */
-.bg-1 {
-	padding-top: 300px;
-	padding-bottom: 300px;
-	background-image:url(../images/fond.jpg);
-	color: #ffffff;
+	font-size:20px;
 }
 
-.bg-2 {
-	background-image:url(../images/entree_ap.jpg);
-	margin-bottom: 30px;
+/* Navbar */
+.list-group-item {
+	color: #555555;
+	display: inline-block;
 }
-.bg-3 {
-	background-image:url(../images/plat_ap.jpg);
-	margin-bottom: 30px;
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	letter-spacing: 5px;
+	font-size:25px;
+	background-color: #647891;
 }
-.bg-4 {
-	background-image:url(../images/dessert_ap.jpg);
-	margin-bottom: 30px;
+
+.navbar a {
+	color: #ffffff !important;
 }
-.bg-5 {
-	background-image:url(../images/fond_cahier.jpg);
-	margin-bottom: 20px;
+.navbar-brand {
+  font-size:25px;
 }
-.bg-footer {
-	background-color: #2f2f2f; /* Black Gray */
-	color : #ffffff;
+
+.navbar-nav  li a:hover {
+	color: black !important;
+}
+
+/* Containeur */
+.sections-wrapper {
+  padding-top: 5px;
+  padding-bottom: 15px;
+	width:100%;
+}
+
+.container-fluid {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*.margin {
+	margin-bottom: 45px;
+}*/
+
+#sel1, #sel2, #sel3 {
+	width:auto;
+	margin:auto;
+	height:auto;
+	text-align:center;
+	font-size: 20px;
 }

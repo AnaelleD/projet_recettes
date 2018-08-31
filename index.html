@@ -34,7 +34,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#entree">ENTRÉES</a></li>
 						<li><a href="#plat">PLATS</a></li>
-						<li><a href="#dessert">DÉSSERTS</a></li>
+						<li><a href="#dessert">DESSERTS</a></li>
 					</ul>
 				</div>
 			</div>
@@ -46,62 +46,77 @@
 		  <h1>Bienvenue sur notre site de recettes internationales ! </h1>
 		</div>
 
-		<div class="container sections-wrapper">
+
+		<!--<div class="container sections-wrapper">-->
 
 			<!-- Second Container -->
 			<div class="container-fluid bg-2" id="entree">
-				<h2 class="margin" >Entrées</h2>
-				<div class="form-group">
-					<label for="sel1" style="color:black; font-weight:bold">Sélectionner une entrée</label>
-					<select class="form-control" id="sel1" style="width:auto; margin:auto;" >
-						<option value="CoquilleSaintJacques">Cassolette de coquilles Saint Jacques</option>
-					</select>
-					<br/>
-					<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe1()" >Voir la recette!</button>
+				<div class = "row">
+					<div class = "col-xs-12">
+						<h2>Entrées</h2>
+						<div class="form-group">
+							<label for="sel1" style="color:black;">Sélectionner une entrée</label>
+							<select class="form-control" id="sel1" style="width:auto; margin:auto; height:auto;" >
+								<option value="CoquilleSaintJacques">Cassolette de coquilles Saint Jacques</option>
+							</select>
+							<br/>
+							<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe1()" >Voir la recette!</button>
+						</div>
+					</div>
 				</div>
 			</div>
 
+
 			<!-- Third Container -->
 			<div class="container-fluid bg-3" id="plat">
-				<h2 class="margin">Plats</h2>
-				<div class="form-group">
-					<label for="sel2" style="color:black">Sélectionner un plat</label>
-					<select class="form-control" id="sel2" style="width:auto; margin:auto;" >
-						<option value="Paella">Paëlla</option>
-						<option value="Boucane">Rougail boucané</option>
-						<option value="CariPoulet">Cari poulet</option>
-						<option value="CivetLapin">Civet lapin</option>
-						<option value="CivetZourite">Civet zourite</option>
-						<option value="LentillesBoucane">Lentilles boucané</option>
-						<option value="PouletMassale">Poulet massalé</option>
-						<option value="ShopSuey">Shop suey</option>
-						<option value="TraversDePorc">Travers de porc</option>
-						<option value="TarteTomate">Tarte à la tomate</option>
-					</select>
-					<br/>
-					<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe2()">Voir la recette!</button>
+				<div class = "row">
+					<div class = "col-xs-12">
+						<h2>Plats</h2>
+						<div class="form-group">
+							<label for="sel2" style="color:black; ">Sélectionner un plat</label>
+							<select class="form-control" id="sel2" style="width:auto; margin:auto; height:auto;" >
+								<option value="Paella">Paëlla</option>
+								<option value="Boucane">Rougail boucané</option>
+								<option value="CariPoulet">Cari poulet</option>
+								<option value="CivetLapin">Civet lapin</option>
+								<option value="CivetZourite">Civet zourite</option>
+								<option value="LentillesBoucane">Lentilles boucané</option>
+								<option value="PouletMassale">Poulet massalé</option>
+								<option value="ShopSuey">Shop suey</option>
+								<option value="TraversDePorc">Travers de porc</option>
+								<option value="TarteTomate">Tarte à la tomate</option>
+							</select>
+							<br/>
+							<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe2()">Voir la recette!</button>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<!-- Fourth Container -->
 			<div class="container-fluid bg-4" id="dessert">
-				<h2 class="margin" >Desserts</h2>
-				<div class="form-group">
-					<label for="sel3" style="color:black">Sélectionner un dessert</label>
-					<select class="form-control" id="sel3" >
-						<option value="Crepes">Crêpes</option>
-						<option value="GateauPain">Gateau de pain</option>
-						<option value="TarteTatin">Tarte tatin</option>
-					</select>
-					<br/>
-					<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe3()">Voir la recette!</button>
+				<div class = "row">
+					<div class = "col-xs-12">
+						<h2>Desserts</h2>
+						<div class="form-group">
+							<label for="sel3" style="color:black">Sélectionner un dessert</label>
+							<select class="form-control" id="sel3" style="width:auto; margin:auto; height:auto;">
+								<option value="Crepes">Crêpes</option>
+								<option value="GateauPain">Gateau de pain</option>
+								<option value="TarteTatin">Tarte tatin</option>
+							</select>
+							<br/>
+							<button type="button" class="btn btn-lg btn-warning" onclick="getRecipe3()">Voir la recette!</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+	
+
 		<!-- Footer -->
 		<footer class="container-fluid bg-footer text-center">
 			<p>Copyright &copy; 2018. AnD. All Rights Reserved</p>
-			<p>This site is hosted on <a href="https://github.com/">GitHub.</a></p>
+			<p>This site is hosted on <a style = "color:black;" href="https://github.com/">GitHub.</a></p>
 		</footer>
 
 	</body>
