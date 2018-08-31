@@ -24,21 +24,21 @@ function getParameterByName(name, url) {
 	if (!results[2]) return '';
 	return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-	
+
 function importCsv(){
 	var laRecette = getParameterByName('recette');
-	
+
     d3.csv("recettes/"+laRecette+".csv",  function(error, data){
-	
-		var nom = [];
+
+				var nom = [];
         var ingredients = [];
         var preparation = [];
-		var cuisson = [];
-		
+				var cuisson = [];
+
         data.forEach(function (d){
             if(d.type == "Nom"){
                 nom.push(d.detail);
-            }			
+            }
             if(d.type == "Ingredients"){
                 ingredients.push(d.detail);
             }
@@ -49,12 +49,12 @@ function importCsv(){
                 cuisson.push(d.detail);
             }
         })
-
-		/*Ajout du nom*/		
+				
+		/*Ajout du nom*/
 		document.getElementById('titre').innerHTML += '<h2>' + nom +'</h2>';
 		/*Ajout liste des ingredients*/
 		for(var i = 0; i < ingredients.length; i++) {
-			document.getElementById('divIngredient').innerHTML += '<p>'+ingredients[i]+'</p><br/>';
+			document.getElementById('divIngredient').innerHTML += '<td>'+ingredients[i]+'</td><br/>';
 		}
 		/*Ajout préparation*/
 		for(var i = 0; i < preparation.length; i++) {
