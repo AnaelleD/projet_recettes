@@ -18,15 +18,15 @@
 }
 
 .bg-2 {
-	background-image:url(../images/entree_transparent.jpg);
+	background-image:url(../images/entree_ap.jpg);
   background-size : 100%;
 }
 .bg-3 {
-	background-image:url(../images/plat_transparent.png);
+	background-image:url(../images/plat_ap.jpg);
   background-size : 100%;
 }
 .bg-4 {
-	background-image:url(../images/dessert_ap2.jpg);
+	background-image:url(../images/dessert_ap.jpg);
 	margin-bottom: 30px;
 	background-size : 100%;
 }
